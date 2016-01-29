@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+	<body>
+		<p></p>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<script type="text/javascript">(function ($) {
+			var theText = $('p').text('jQuery').text(); //return the string "jQuery".
+			alert(theText);
+			//cannot chain after text(). The chain is broken
+			//a string is returned, not the jQuery object.
+		})(jQuery)</script>		
+	</body>
+</html>
