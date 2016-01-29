@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+	<body>
+		<a>jQuery</a>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<script type="text/javascript">
+			if(jQuery('a').get(0)){ //is there an element in the set?
+				jQuery('a').attr('href','http://www.jquery.com');
+			}
+			if(jQuery('a').length){ //check the length of the set.can also use .size()
+				jQuery('a').attr('title','jQuery');
+			}
+		</script>
+	</body>
+</html>
