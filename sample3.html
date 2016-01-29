@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<script type="text/javascript">
+			//standard
+			jQuery(document).ready(function () { alert('DOM is ready');});
+			//shortcut, but same thing as above
+			jQuery(function () { alert('No readly, the DOM is ready!');});
+
+			//shortcut with fail-safe usage of $. Keep in mind that a reference
+			//to the jQuery function is passed into the anonymous function
+			jQuery(function ($){
+				alert('Seriously its ready!');
+				//Use $() without fear of conflicts.
+			});
+		</script>
+	</head>
+	<body></body>
+</html>
