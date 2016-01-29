@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+	<body>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<script type="text/javascript">
+			jQuery(function ($) { //pass jQuery a function
+				//pass jQuery a string of html
+				$('<p></p>').appendTo('body');
+				//pass jQuery an element reference.
+				$(document.createElement('a')).text('jQuery').appendTo('p');
+				//pass jQuery a CSS expression.
+				$('a:first').attr('href','http://forum.avatarnice.com');
+				//pass jQuery a DOM reference
+				$(document.anchors[0]).attr('jQuery');
+			} );
+		</script>		
+	</body>
+</html>
