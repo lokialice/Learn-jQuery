@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+	<body>
+		<h1>H1</h1>
+		<h2>H2</h2>
+		<h3>H3</h3>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script type="text/javascript">
+		(function ($){
+			//we pass in h3 first, but h1 appears earlier in
+			//the document, so it is first in the wrapper set
+			alert($('h3,h2,h1').get(0).nodeName);	
+			//alerts "H1"		
+		})(jQuery);
+	</script>
+
+	</body>
+</html>
