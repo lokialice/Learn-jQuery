@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+	<body>
+		<div>jQuery</div>
+		<p> is the </p>
+		<ul>
+			<li> best! </li>
+		</ul>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<script type="text/javascript">
+			(function ($) {
+				//alerts jQuery is the best!
+				alert($('div, p, ul li').text());
+				//inefficent way. alerts jQuery is the best!
+				alert($('div').text() + $('p').text() + $('ul li').text());
+			})(jQuery);
+		</script>
+	</body>
+</html>
