@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+	<body>
+		<div id="div1">I am a div</div>
+		<div id="div2">I am a div</div>
+		<div id="div3">I am a div</div>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>	
+		<script type="text/javascript">
+			(function ($) {
+				//alerts attribute value for first element in wrapper set.
+				var $divs = $('div'); //cached query
+				alert($divs.eq(0).attr('id')); //start with 0 instead of 1
+				alert($divs.eq(1).attr('id'));
+				alert($divs.eq(2).attr('id'));		
+						
+			})(jQuery);
+		</script>	
+	</body>
+</html>
