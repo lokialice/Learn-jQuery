@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+	<body>
+		<div>
+			<div>
+				<div id="context"><a href="#">jQuery</a></div>
+			</div>
+		</div>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<script type="text/javascript">
+			(function ($){
+				//alerts "object HTMLDocument" in firefox
+				//same as $('a',document).context
+				alert($('a').context);
+				//alert "object HTMLDocument" in firefox
+				alert($('a', $('#context')[0]).context);				
+			})(jQuery);
+		</script>
+	</body>
+</html>
