@@ -1,0 +1,32 @@
+<DOCTYPE html>
+<html lang='en'>
+	<body>
+		<ul>
+			<li>1</li>
+			<li>2</li>
+			<li>3</li>
+			<li>4</li>
+			<li>5</li>
+					
+		</ul>
+		<ul>
+			<li>1</li>	
+			<li>2</li>
+			<li>3</li>
+			<li>4</li>
+			<li>5</li>		
+		</ul>
+
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<script type="text/javascript">
+			(function ($) {
+				//remember that text() combines the contents of all
+				// elements in the wrapper set into a single string
+				alert($('li:nth-child(2)').text()); //alert "22"
+				alert($('li:nth-child(odd)').text()); //alert "135135"
+				alert($('li:nth-child(even)').text()); //alert "2424"
+				alert($('li:nth-child(2n)').text()); //alert "2424"
+			})(jQuery);
+		</script>
+	</body>
+</html>
