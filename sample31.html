@@ -1,0 +1,21 @@
+<DOCTYPE html>
+<html lang='en'>
+	<body>
+		<div>javascript</div>
+		<div><span class="jquery">jQuery</span></div>
+		<div>javascript</div>
+		<div><span class="jquery">jQuery</span></div>
+		<div>javascript</div>
+		<div><span class="jquery">jQuery</span></div>
+		
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<script type="text/javascript">
+			(function ($) {
+				//select all div's, remove all div's that have a child element with class="jquery"
+				alert($('div:not(:has(.jquery))').text()); //alerts combined text of all div's
+				//select all div's, remove all div's that are odd in the set (count starts at 0)
+				alert($('div:not(:odd)').text()); //alerts combined text of all div's
+			})(jQuery);
+		</script>
+	</body>
+</html>
