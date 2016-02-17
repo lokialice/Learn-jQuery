@@ -1,0 +1,15 @@
+<DOCTYPE html>
+<html lang='en'>
+	<body>
+		
+
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<script type="text/javascript">
+			(function ($) {
+				alert($('<div><a></a></div>').get(0).nodeName); //alerts "div"
+				alert($('<div><a></a></div>').length); //alert "1" <div> is in the wrapper set
+				alert($('<div><a></a></div><div><a></a></div>').length); //alert "2" <div> are in the set
+			})(jQuery);
+		</script>
+	</body>
+</html>
