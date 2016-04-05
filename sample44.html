@@ -1,0 +1,16 @@
+<DOCTYPE html>
+<html lang='en'>
+	<body>
+		<div>0</div>
+		<div>1</div>
+		<div>2</div>
+		<div>3</div>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<script type="text/javascript">
+			(function ($) {
+				//alert "3"
+				alert($('div').index($('div:first')));
+			})(jQuery);
+		</script>
+	</body>
+</html>
