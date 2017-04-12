@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sample 53</title>
+</head>
+<body>
+	<input type="button" name="button" value="Button 1" id="button1" />
+	<input type="button" name="button"	id="button2" value="Button 2" disabled="disabled" />
+
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script type="text/javascript">
+		(function ($) {
+			//Is it enabled?
+			alert($('#button1').is(':enabled')); //Alert true
+			//Or, using a filter
+			alert($('#button1:enabled').length); //Alert '1'
+			//Is it disabled?
+			alert($("#button2").is(':disabled')); //Alert true
+			//Or, using filter.
+			alert($('#button2:disabled').length); //Alert "1"
+		})(jQuery);
+	</script>
+</body>
+</html>
